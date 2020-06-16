@@ -12,3 +12,128 @@
  Text Domain:  primerchild
 */
 
+.site-header {
+    height: 65vh;
+}
+
+.site-header-single {
+    height: 15vh;
+}
+
+.site-header-wrapper {
+    display: grid;
+}
+
+.site-title-wrapper {
+    justify-self: center;
+}
+
+.entry-meta {
+    display: none;
+}
+
+.entry-footer .cat-links {
+    display: none;
+}
+
+.wp-block-gallery .blocks-gallery-item figure {
+    padding-bottom: 2rem;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.main-navigation-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.wp-block-group__inner-container {
+    display: grid;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+    width: 50vw;
+    max-width: none;
+    margin: 60px 0;
+    justify-self: center;
+}
+
+.wp-block-separator {
+    background-color: #2c2c2c;
+}
+
+.wp-block-image {
+    position: relative;
+}
+
+.wp-block-image figcaption {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #2c2c2c;
+}
+
+[class^="wp-block-"].alignwide img {
+    max-width: 100%;
+}
+
+.wp-block-media-text__media {
+    justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    [class^="wp-block-"].alignwide {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr;
+        max-width: 100% !important;
+        min-height: 38vh;
+        max-height: 90vh;
+    }
+
+    [class^="wp-block-"].alignwide img {
+        max-height: 150px;
+        min-height: 80px;
+    }
+
+    .wp-block-media-text__media {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 40vw;
+    }
+
+    .wp-block-media-text .wp-block-media-text__content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
+        grid-column: 1;
+        grid-row: 1 !important;
+        max-width: 50vw;
+        justify-self: center;
+    }
+
+    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+        grid-column: 1;
+        grid-row: 2 !important;
+    }
+
+    .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+        margin: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
+        max-width: 80vw;
+    }
+}
