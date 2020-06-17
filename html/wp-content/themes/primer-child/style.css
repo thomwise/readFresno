@@ -18,6 +18,10 @@
     display: grid;
 }
 
+.site-title {
+    display: none;
+}
+
 .custom-logo {
     height: 10vw;
     width: auto;
@@ -63,19 +67,19 @@
     position: relative;
 }
 
-.wp-block-image figcaption {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px #2c2c2c;
+figure:hover {
+    transform: scale(1.1);
+    transition: transform ease .2s;
 }
 
-.wp-block-image figcaption a {
+.wp-block-image figcaption {
     color: #ffffff;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 [class^="wp-block-"].alignwide img {
@@ -84,6 +88,11 @@
 
 .wp-block-media-text__media {
     justify-self: center;
+}
+
+.site-info-wrapper .site-info-text {
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 976px) {
