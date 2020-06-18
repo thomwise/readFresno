@@ -48,6 +48,21 @@
     justify-content: center;
 }
 
+.main-navigation a {
+    padding: .9rem;
+}
+
+
+.main-navigation .expand {
+    padding: .9rem;
+    color: #2c2c2c;
+}
+
+.main-navigation ul ul a {
+    white-space: nowrap; 
+    width: auto;
+}
+
 .wp-block-group__inner-container {
     display: grid;
 }
@@ -90,6 +105,10 @@ figure:hover {
     justify-self: center;
 }
 
+#ect-events-list-content .style-1 .ect-list-post-right .ect-list-venue {
+    background: #ffffff !important;
+}
+
 .site-info-wrapper .site-info-text {
     width: 100%;
     text-align: center;
@@ -99,10 +118,6 @@ figure:hover {
     .custom-logo {
         height: auto;
         width: 360px;
-    }
-
-    .menu-toggle {
-        top: -280px;
     }
 
     .main-navigation {
